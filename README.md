@@ -24,6 +24,15 @@ $ nest new Nome Do Projeto
 
 <p>Depois que o gerenciador de pacotes for escolhido o projeto será criado.</p>
 
+## Estrutura do projeto
+
+<p>O projeto padrão criado vem com as classes.</p>
+<p>app.controller.spec -> que é a classe para a implementação dos testes.</p>
+<p>app.controller -> que é a classe responsável por gerenciar as rotas.</p>
+<p>app.service -> .</p>
+<p>app.modules -> .</p>
+<p>main -> .</p>
+
 ## Utilizar banco de dados na aplicação
 
 <p>Para utilizar o banco de dados na aplicação é necessário instalar algumas ferramentas e configura-lo na aplicação.</p>
@@ -59,6 +68,21 @@ imports: [LivrosModule, TypeOrmModule.forRoot({
 <p>As configurações também podem ser feitas usando um .env.</p>
 <p>O synchronize é utilizado apenas quando o sistema ainda está em desenvolvimento (Rever a explicação disso).</p>
 <p>Entities (Rever a explicação disso).</p>
+
+### Uso do banco de dados na aplicação
+
+<p>A estrutura para a criação das entidades é bem parecida com a do spring o que facilita a compreenção para quem já viu spring.</p>
+
+### Configuração do Repository
+
+<p>O respository pode ser configurado na propria classe service atraves de um construtor. Exemplo:</p>
+
+```bash
+constructor(
+    @InjectRepository(Livro)
+    private readonly livrosRepository: Repository<Livro>,
+  ){}
+```
 
 ## Running the app
 
