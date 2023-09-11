@@ -24,6 +24,22 @@ $ nest new Nome Do Projeto
 
 <p>Depois que o gerenciador de pacotes for escolhido o projeto será criado.</p>
 
+## Utilizar banco de dados na aplicação
+
+<p>Para utilizar o banco de dados na aplicação é necessário instalar algumas ferramentas e configura-lo na aplicação.</p>
+
+### Instalação do banco de dados
+
+```bash
+$ npm i @nestjs/typeorm typeorm@0.2
+$ npm i pg
+```
+<p>Caso de erro na instalação do typeorm utilize o comando.</p>
+
+```bash
+$ npm i @nestjs/typeorm typeorm@0.2 --force
+```
+
 ## Running the app
 
 ```bash
