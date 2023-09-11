@@ -40,6 +40,26 @@ $ npm i pg
 $ npm i @nestjs/typeorm typeorm@0.2 --force
 ```
 
+### Configuração do banco de dados
+
+<p>As configurações do banco de dados é feita na classe app.modules dentro do @Module nos imports.</p>
+
+```bash
+imports: [LivrosModule, TypeOrmModule.forRoot({
+    type: 'postgres',
+    host: 'localhost',
+    port: 5432,
+    database: 'NestJS',
+    username: 'postgres',
+    password: '123',
+    synchronize: true,
+    entities: [__dirname + '/**/*.entity{.js,.ts}'],
+  })],
+```
+<p>As configurações também podem ser feitas usando um .env.</p>
+<p>O synchronize é utilizado apenas quando o sistema ainda está em desenvolvimento (Rever a explicação disso).</p>
+<p>Entities (Rever a explicação disso).</p>
+
 ## Running the app
 
 ```bash
