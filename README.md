@@ -33,6 +33,8 @@ $ nest new Nome Do Projeto
 <p>app.modules -> .</p>
 <p>main -> .</p>
 
+<p>A estrutura geral das classes do projeto é bem semelhante as classes implementadas ao utilizar o spring.</p>
+
 ## Utilizar banco de dados na aplicação
 
 <p>Para utilizar o banco de dados na aplicação é necessário instalar algumas ferramentas e configura-lo na aplicação.</p>
