@@ -27,8 +27,8 @@ $ nest new Nome Do Projeto
 ## Estrutura do projeto
 
 <p>O projeto padrão criado vem com as classes.</p>
-<p>app.controller.spec -> que é a classe para a implementação dos testes.</p>
-<p>app.controller -> que é a classe responsável por gerenciar as rotas.</p>
+<p>app.controller.spec -> Classe para a implementação dos testes.</p>
+<p>app.controller -> Classe responsável por gerenciar as rotas.</p>
 <p>app.service -> .</p>
 <p>app.modules -> .</p>
 <p>main -> .</p>
@@ -37,7 +37,7 @@ $ nest new Nome Do Projeto
 
 ## Utilizar banco de dados na aplicação
 
-<p>Para utilizar o banco de dados na aplicação é necessário instalar algumas ferramentas e configura-lo na aplicação.</p>
+<p>Para utilizar o banco de dados na aplicação é necessário instalar algumas bibliotecas e configura-las na aplicação.</p>
 
 ### Instalação do banco de dados
 
@@ -68,8 +68,8 @@ imports: [LivrosModule, TypeOrmModule.forRoot({
   })],
 ```
 <p>As configurações também podem ser feitas usando um .env.</p>
-<p>O synchronize é utilizado apenas quando o sistema ainda está em desenvolvimento (Rever a explicação disso).</p>
-<p>Entities (Rever a explicação disso).</p>
+<p>O synchronize é utilizado para carregar as entidades que estão no projeto, construindo as tabelas no banco de dados de forma automatica.</p>
+<p>Entities é para que as entidades sejam encontradas pelo typeorm</p>
 
 ### Uso do banco de dados na aplicação
 
