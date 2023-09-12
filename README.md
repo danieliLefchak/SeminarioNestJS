@@ -121,7 +121,7 @@ https://typeorm.io/
 # Gerador de CRUD
 https://docs.nestjs.com/recipes/crud-generator
 
-# Sobre a estrutura do projeto
+# Estrutura do projeto
 https://docs.nestjs.com/modules
 https://docs.nestjs.com/controllers
 https://docs.nestjs.com/providers
