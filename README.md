@@ -29,9 +29,8 @@ $ nest new Nome Do Projeto
 <p>O projeto padrão criado vem com as classes.</p>
 <p>app.controller.spec -> Classe para a implementação dos testes.</p>
 <p>app.controller -> Classe responsável por gerenciar as rotas.</p>
-<p>app.service -> .</p>
-<p>app.modules -> .</p>
-<p>main -> .</p>
+<p>app.service -> Classe responsável pelo armazenamento e recuração de dados.</p>
+<p>app.modules -> Classe onde são definidos os grupos de componentes como providers e controllers.</p>
 
 <p>A estrutura geral das classes do projeto é bem semelhante as classes implementadas ao utilizar o spring.</p>
 
@@ -68,8 +67,8 @@ imports: [LivrosModule, TypeOrmModule.forRoot({
   })],
 ```
 <p>As configurações também podem ser feitas usando um .env.</p>
-<p>O synchronize é utilizado para carregar as entidades que estão no projeto, construindo as tabelas no banco de dados de forma automatica.</p>
-<p>Entities é para que as entidades sejam encontradas pelo typeorm</p>
+<p>O synchronize é utilizado para garantir a sincronização das entidades com o banco de dados sempre que a aplicação for executada.</p>
+<p>Entities é utilizado inicializar a conexão inicial com o banco de dados</p>
 
 ### Uso do banco de dados na aplicação
 
@@ -110,4 +109,21 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Referências
+
+```bash
+# Banco de dados utilizando TypeOrm
+https://docs.nestjs.com/techniques/database
+https://typeorm.io/
+
+# Gerador de CRUD
+https://docs.nestjs.com/recipes/crud-generator
+
+# Sobre a estrutura do projeto
+https://docs.nestjs.com/modules
+https://docs.nestjs.com/controllers
+https://docs.nestjs.com/providers
+https://docs.nestjs.com/fundamentals/testing
 ```
