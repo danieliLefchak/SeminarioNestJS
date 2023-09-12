@@ -21,7 +21,7 @@ export class LivrosController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
+  findOne(@Param('id') id: string) {
     return this.livrosService.findOne(+id);
   }
 
