@@ -68,7 +68,7 @@ imports: [LivrosModule, TypeOrmModule.forRoot({
 ```
 <p>As configurações também podem ser feitas usando um .env.</p>
 <p>O synchronize é utilizado para garantir a sincronização das entidades com o banco de dados sempre que a aplicação for executada.</p>
-<p>Entities é utilizado inicializar a conexão inicial com o banco de dados</p>
+<p>Entities é utilizado inicializar a conexão inicial com o banco de dados.</p>
 
 ### Uso do banco de dados na aplicação
 
@@ -127,3 +127,6 @@ https://docs.nestjs.com/controllers
 https://docs.nestjs.com/providers
 https://docs.nestjs.com/fundamentals/testing
 ```
+## Link para apresentação
+
+https://docs.google.com/presentation/d/1Tk47K6ZL73p6fgRz_02jsqLRgE-Fz8-E8vB6IifmTng/edit?usp=sharing
