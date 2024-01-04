@@ -127,6 +127,3 @@ https://docs.nestjs.com/controllers
 https://docs.nestjs.com/providers
 https://docs.nestjs.com/fundamentals/testing
 ```
-## Link para apresentação
-
-https://docs.google.com/presentation/d/1Tk47K6ZL73p6fgRz_02jsqLRgE-Fz8-E8vB6IifmTng/edit?usp=sharing
